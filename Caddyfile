@@ -1,0 +1,11 @@
+:8088 {
+	root * /var/www/hdy
+	file_server
+
+	try_files {path} /index.html
+
+	@static path /assets/*
+	header @static Cache-Control "public, max-age=31536000, immutable"
+
+	encode gzip
+}

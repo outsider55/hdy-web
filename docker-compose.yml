@@ -1,0 +1,7 @@
+services:
+  hdy:
+    build: .
+    container_name: hdy-web
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
