@@ -4,15 +4,28 @@
 
 > Maintained by **[Outsider](https://github.com/outsider55)** 🚀
 
-## 快速部署
+## 快速部署（一键脚本，自动装 Docker）
+
+```bash
+git clone https://github.com/outsider55/hdy-web.git
+cd hdy-web
+bash deploy.sh
+```
+
+脚本会自动：
+1. 检测并安装 Docker + Docker Compose
+2. 构建镜像并启动容器
+3. 输出访问地址
+
+访问：`http://你的服务器IP:8088`
+
+### 手动部署（已有 Docker 环境）
 
 ```bash
 git clone https://github.com/outsider55/hdy-web.git
 cd hdy-web
 docker compose up -d
 ```
-
-访问：`http://你的服务器IP:8088`
 
 ## 功能特性
 
